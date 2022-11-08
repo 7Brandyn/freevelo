@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #003858;
+    --dark: #303030;
+    --lite: #e4e4e4;
+    --logo: #abd3ea;
+    --level-1: #00c2ff;
+    --level-2: #04ce25;
+    --level-3: #ecd71b;
+    --level-4: #ff8718;
+    --level-5: #df0d0d;
+}
+
+/* UNIVERSALS */
+
+h1 {font-size: 6rem; font-weight: 900;}
+h2 {font-size: 5rem; font-weight: 1000;}
+h3 {font-size: 5rem; font-weight: 1000;}
+
+.nav-padding {
+    padding: 6px 18px 8px 18px;
+}
+
+.nav-item {
+    font-size: 1rem;
+}
+
+.primary-button {
+    background-color: var(--brand);
+    color: var(--lite);
+    border: 5px var(--lite) solid;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    background-color: var(--logo);
+    color: var(--brand);
+}
+
+.primary-button:active {
+    background-color: var(--lite);
+    color: var(--brand);
+}
+
+.link {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--lite);
+    margin: 0 20px;
+}
+
+.link > .active {
+    font-weight: 700;
+    color: var(--logo);
+}
+
+.navbar {
+    background-color: var(--brand);
+    height: 70px;
+    box-shadow: 0 0 8px var(--brand);
+}
+
+.nav-link {
+    color: var(--lite);
+}
+
+.hero {
+    --bs-gutter-x: 0 !important;
+}
+
+.carousel-control {
+    margin-top: 20px;
+}
+
+.carousel-description {
+    color: var(--lite);
+    text-shadow: 2px 2px 4px var(--dark);
+    align-items: flex-start;
+    height: 90vh;
+    justify-content: center;
+}
+
+.carousel-description h1,
+.carousel-description p,
+.carousel-description .primary-button {
+    margin-right: 60%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-image-1 {
+    background: url(./img/Hero-Image-1.png) no-repeat center;
+    background-size: cover; 
+}
+.hero-image-2 {
+    background: url(./img/Hero-Image-2.png) no-repeat center;
+    background-size: cover; 
+}
+.hero-image-3 {
+    background: url(./img/Hero-Image-3.png) no-repeat center;
+    background-size: cover; 
+}
+.hero-image-4 {
+    background: url(./img/Hero-Image-4.png) no-repeat center;
+    background-size: cover; 
+}
+
+.hero-padding {
+    padding: 2px 40px 4px 40px;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    filter: invert(0) !important;
+    width: 4rem !important;
+    height: 4rem !important;
+}
+
+.section-2 {
+    background-color: yellow;
+}
+
+.section-3 {
+    background-color: green;
+}
+
+.section-4 {
+    background-color: blue;
+}
+
+.section-5 {
+    background-color: purple;
+}
+
+.section-6 {
+    background-color: black;
+}
+
+.section-7 {
+    background-color: gray;
+}
+
+.footer {
+    background-color: brown;
+}

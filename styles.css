@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
 }
 
 :root {
@@ -18,10 +19,34 @@
 
 /*************** UNIVERSALS *************/
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 h1 {font-size: 6rem; font-weight: 900;}
-h2 {font-size: 5rem; font-weight: 1000;}
-h3 {font-size: 5rem; font-weight: 1000;}
-h5 {font-size: 1.5rem; font-weight: 1000;}
+h2 {font-size: 5rem !important; font-weight: 900 !important;}
+h3 {font-size: 5rem; font-weight: 900;}
+h4 {font-size: 2.5rem !important; font-weight: 900 !important;}
+h5 {font-size: 1.5rem !important; font-weight: 900 !important;}
+
+.btn-brand {
+    background-color: var(--brand);
+    color: var(--lite);
+    border: 5px var(--lite) solid;
+    border-radius: 30px;
+    font-weight: 700;
+    padding: 6px 18px 8px 18px;
+}
+
+.btn-learn {
+    width: 60%;
+    background-color: var(--lite);
+    color: var(--brand);
+    border: 5px var(--brand) solid;
+    font-weight: 700;
+    padding: 6px 18px 8px 18px;  
+}
+
 
 /***************** NAVBAR *****************/
 
@@ -32,15 +57,6 @@ nav,
 
 .nav-item {
     font-size: 1rem;
-}
-
-.btn-brand {
-    background-color: var(--brand);
-    color: var(--lite);
-    border: 5px var(--lite) solid;
-    border-radius: 30px;
-    font-weight: 700;
-    padding: 6px 18px 8px 18px;
 }
 
 .navbar .navbar-toggler-icon {
@@ -186,11 +202,12 @@ label {
 /* TOURING SECTION */
 
 .section-3 {
-    background-color: green;
+    background-color: var(--lite);
+    color: var(--brand);
 }
 
 .touring-img {
-    height: 560px;
+    height: 485px;
     display: block;
     overflow: hidden;
     margin: auto;
@@ -211,14 +228,24 @@ label {
 
 .touring-img img {
     width: 100%;
-    height: 560px;
+    height: 485px;
     object-fit: cover;
 }
 
-/* BLAH BLAH BLAH */
+/* TOURING STYLE */
 
 .section-4 {
-    background-color: blue;
+    background-image: url(./img/tbg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: var(--lite);
+}
+
+.style-types img {
+    border: 5px solid var(--lite);
+    border-radius: 100px;
 }
 
 .section-5 {

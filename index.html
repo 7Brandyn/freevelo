@@ -10,30 +10,30 @@
   <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="./img/lite-freevelo-logo.png" alt="logo" height="30px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto  mb-lg-0 d-flex justify-content-around">
-                <li class="nav-item py-2">
-                    <a class="link active" href="#">Tours</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="link" href="#">Rental</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="link" href="#">About</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="link" href="#">Resources</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn-brand" type="submit">Search</button>
-            </form>
-          </div>
+            <a class="navbar-brand" href="#"><img src="./img/lite-freevelo-logo.png" alt="logo" height="30px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto  mb-lg-0 d-flex justify-content-around">
+                    <li class="nav-item py-2">
+                        <a class="link active" href="#">Tours</a>
+                    </li>
+                    <li class="nav-item py-2">
+                        <a class="link" href="#">Rental</a>
+                    </li>
+                    <li class="nav-item py-2">
+                        <a class="link" href="#">About</a>
+                    </li>
+                    <li class="nav-item py-2">
+                        <a class="link" href="#">Resources</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn-brand" type="submit">Search</button>
+                </form>
+            </div>
         </div>
       </nav>
 
@@ -88,39 +88,43 @@
          </div>
     </div>
 
+    <!-- CONTIANER -->
+
     <div class="container-fluid section-2">
-        <div class="container">
-            <h5 class="d-flex justify-content-center py-4">WHICH TOUR WOULD YOU LIKE TO GO ON?</h5>
-            <label>
-                <select class="input-selection">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="opt1">Option 1</option>
-                    <option value="opt2">Option 2</option>
-                    <option value="opt3">Option 3</option>
-                    <option value="opt4">Option 4</option>
+        <h5 class="d-flex justify-content-center pt-5">WHICH TOUR WOULD YOU LIKE TO GO ON?</h5>
+        <div class="container d-flex justify-content-around form-container">
+            <div class="form-floating col-3 mx-1 my-5 ">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
                 </select>
-            </label>
-            <label>
-                <select class="input-selection">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="opt1">Option 1</option>
-                    <option value="opt2">Option 2</option>
-                    <option value="opt3">Option 3</option>
-                    <option value="opt4">Option 4</option>
+                <label for="floatingSelect">Works with selects</label>
+            </div>
+            <div class="form-floating col-3 mx-1 my-5">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
                 </select>
-            </label>
-            <label>
-                <select class="input-selection">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="opt1">Option 1</option>
-                    <option value="opt2">Option 2</option>
-                    <option value="opt3">Option 3</option>
-                    <option value="opt4">Option 4</option>
+                <label for="floatingSelect">Works with selects</label>
+            </div>
+            <div class="form-floating col-3 mx-1 my-5">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
                 </select>
-            </label>
-            <button>Search</button>
+                <label for="floatingSelect">Works with selects</label>
+            </div>
+            <button class="btn-brand col-3 mx-1 my-5" type="submit">Search</button>
         </div>
     </div>
+
+<!-- ANOTHER ONE -->
 
     <div class="container-fluid section-3">
         <div class="container">

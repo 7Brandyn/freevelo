@@ -169,9 +169,21 @@ nav,
 /********* CHOOSE TOUR ***********/
 
 .section-2 {
-    background-color: yellow;
+    background-color: var(--brand);
+    color: var(--lite);
     width: 100%;
 }
+
+.form-container {
+    width: 100%;
+}
+
+label {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+/* SECTION */
 
 .section-3 {
     background-color: green;

@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif !important;
 }
-
 :root {
     --brand: #003858;
     --dark: #303030;
@@ -16,6 +15,7 @@
     --level-4: #ff8718;
     --level-5: #df0d0d;
     --level-6: #de0be2;
+    scroll-behavior: auto;
 }
 
 ::-webkit-scrollbar {
@@ -154,6 +154,10 @@ nav,
     --bs-gutter-x: 0 !important;
 }
 
+.carousel-inner {
+
+}
+
 .carousel-control {
     margin-top: 20px;
 }
@@ -162,7 +166,7 @@ nav,
     color: var(--lite);
     text-shadow: 2px 2px 4px var(--dark);
     align-items: flex-start;
-    height: 90vh;
+    height: 90%;
     justify-content: center;
     padding-right: 25% !important;
 }
@@ -275,7 +279,12 @@ label {
 /* GROUP TOUR LIST SECTION */
 
 .section-5 {
-    background-color: purple;
+    background-image: url(./img/popbg.png);
+}
+
+.group-tours {
+    overflow: auto;
+    color: var(--lite);
 }
 
 .group-tours a {
@@ -288,31 +297,22 @@ label {
     color: var(--logo);
 }
 
-.group-tours > .d-flex {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-.group-tours > .d-flex > .single-tour {
-    display: inline-flex;
-}
-
-/* test */
+/* TOURING CARD */
 
 .single-tour { 
     position: relative;
     color: var(--lite);
     background-color: var(--brand);
-    height: 330px;
+    height: auto;
     width: 440px;
     padding: 10px;
     background-color: var(--brand);
+    border-radius: 5px;
 }
 
 .single-c1 h3 {
     position: absolute;
-    bottom: 114px;
+    bottom: 76px;
     left: 18px;
     font-weight: 900;
 }
@@ -320,49 +320,44 @@ label {
 .second-row {
     margin: 4px;
     font-size: 14px;
-    background-color: black;
 }
 
 .lorem {
     padding: 0px;
-    background: rgba(197, 104, 104, 0.559);
     width: 260px;
     min-height: auto;
     margin-bottom: 0;
 }
 
 .second-row p:nth-child(2) {
-    display: flex;
-    flex-direction: column-reverse;
     font-size: 10px;
     margin-bottom: 0;
-    
+}
+
+.length {
+    width: 40px;
+    height: auto;
 }
 
 .difficulty {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    line-height: 16px;
 }
 
 .difficulty p {
     margin-bottom: 0;
 }
 
+.third-row {
+    display: flex !important;
+    align-items: baseline;
+    bottom: 0;
+}
+
+.price {
+    font-weight: 700;
+}
+
 /* test */
-
-.single-tour:nth-child(3n+1) {
-   
-}
-
-.single-tour:nth-child(3n+2) {
-  
-}
-
-.single-tour:nth-child(3n+3) {
-   
-}
-
 
 .section-6 {
     background-color: black;

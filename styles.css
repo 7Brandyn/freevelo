@@ -384,9 +384,14 @@ label {
     font-size: 14px;
 }
 
+/* SPONSORS SECTION */
+
 .section-7 {
-    background-color: gray;
+    background-color: var(--logo);
+    color: var(--brand);
 }
+
+/* FOOTER SECTION */
 
 .footer {
     background-color: brown;

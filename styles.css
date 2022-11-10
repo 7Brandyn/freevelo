@@ -15,9 +15,13 @@
     --level-3: #ecd71b;
     --level-4: #ff8718;
     --level-5: #df0d0d;
+    --level-6: #de0be2;
 }
 
-/*************** UNIVERSALS *************/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -28,6 +32,20 @@ h2 {font-size: 5rem !important; font-weight: 900 !important;}
 h3 {font-size: 5rem; font-weight: 900;}
 h4 {font-size: 2.5rem !important; font-weight: 900 !important;}
 h5 {font-size: 1.5rem !important; font-weight: 900 !important;}
+
+.level-1 {background-color: var(--level-1);}
+.level-2 {background-color: var(--level-2);}
+.level-3 {background-color: var(--level-3);}
+.level-4 {background-color: var(--level-4);}
+.level-5 {background-color: var(--level-5);}
+
+.badge-pill {border-radius: 100px !important;}
+
+.road-badge {background-color: var(--level-5);}
+.supported-badge {background-color: var(--level-4);}
+.unsupported-badge {background-color: var(--level-2);}
+.luxurious-badge {background-color: var(--level-6);}
+
 
 .btn-brand {
     background-color: var(--brand);
@@ -47,6 +65,12 @@ h5 {font-size: 1.5rem !important; font-weight: 900 !important;}
     padding: 6px 18px 8px 18px;  
 }
 
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 /***************** NAVBAR *****************/
 
@@ -248,9 +272,97 @@ label {
     border-radius: 100px;
 }
 
+/* GROUP TOUR LIST SECTION */
+
 .section-5 {
     background-color: purple;
 }
+
+.group-tours a {
+    color: var(--lite);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.group-tours a:hover {
+    color: var(--logo);
+}
+
+.group-tours > .d-flex {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.group-tours > .d-flex > .single-tour {
+    display: inline-flex;
+}
+
+/* test */
+
+.single-tour { 
+    position: relative;
+    color: var(--lite);
+    background-color: var(--brand);
+    height: 330px;
+    width: 440px;
+    padding: 10px;
+    background-color: var(--brand);
+}
+
+.single-c1 h3 {
+    position: absolute;
+    bottom: 114px;
+    left: 18px;
+    font-weight: 900;
+}
+
+.second-row {
+    margin: 4px;
+    font-size: 14px;
+    background-color: black;
+}
+
+.lorem {
+    padding: 0px;
+    background: rgba(197, 104, 104, 0.559);
+    width: 260px;
+    min-height: auto;
+    margin-bottom: 0;
+}
+
+.second-row p:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 10px;
+    margin-bottom: 0;
+    
+}
+
+.difficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.difficulty p {
+    margin-bottom: 0;
+}
+
+/* test */
+
+.single-tour:nth-child(3n+1) {
+   
+}
+
+.single-tour:nth-child(3n+2) {
+  
+}
+
+.single-tour:nth-child(3n+3) {
+   
+}
+
 
 .section-6 {
     background-color: black;

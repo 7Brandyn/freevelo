@@ -279,7 +279,15 @@ label {
 /* GROUP TOUR LIST SECTION */
 
 .section-5 {
-    background-image: url(./img/popbg.png);
+    background: url(./img/popbg.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section-5 h4 {
+    color: var(--brand);
 }
 
 .group-tours {
@@ -287,14 +295,15 @@ label {
     color: var(--lite);
 }
 
-.group-tours a {
-    color: var(--lite);
+.view-all {
+    color: var(--brand);
     text-decoration: none;
-    text-decoration: underline;
+    font-weight: 500;
 }
 
-.group-tours a:hover {
-    color: var(--logo);
+.view-all:hover {
+    color: var(--brand);
+    text-decoration: underline;
 }
 
 /* TOURING CARD */
@@ -308,6 +317,13 @@ label {
     padding: 10px;
     background-color: var(--brand);
     border-radius: 5px;
+    transition: .4s;
+}
+
+.single-tour:hover {
+    transition: .4s;
+    transform: scale(95%);
+    cursor: pointer;
 }
 
 .single-c1 h3 {
@@ -357,10 +373,15 @@ label {
     font-weight: 700;
 }
 
-/* test */
+/* RENTAL SECTION */
 
 .section-6 {
-    background-color: black;
+    background-color: var(--brand);
+    color: var(--lite);
+}
+
+.rental-container p {
+    font-size: 14px;
 }
 
 .section-7 {

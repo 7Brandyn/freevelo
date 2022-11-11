@@ -391,8 +391,48 @@ label {
     color: var(--brand);
 }
 
+.section-7 > div img {
+    opacity: .5;
+    transition: .4s;
+}
+
+.section-7 > div img:hover {
+    opacity: 1;
+    transition: .4s;
+    cursor: pointer;
+}
+
 /* FOOTER SECTION */
 
 .footer {
-    background-color: brown;
+    color: var(--lite);
+    background-color: var(--dark);
+}
+
+.footer p {
+    width: 260px;
+    margin-bottom: 0;
+}
+
+.footer-logo p {
+    font-size: .7rem;
+}
+
+.footer-image {
+    width: 260px;
+    height: auto;
+}
+
+.footer-heading h6 {
+    font-weight: 700;
+}
+
+.footer-heading a {
+    color: var(--lite);
+    text-decoration: none;
+    padding: 6px 0;
+}
+
+.footer-heading a:hover {
+    color: var(--logo);
 }

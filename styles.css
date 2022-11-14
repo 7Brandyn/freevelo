@@ -403,12 +403,15 @@ label {
 
 .footer {
     color: var(--lite);
-    background-color: var(--dark);
 }
 
 .footer p {
     width: 260px;
     margin-bottom: 0;
+}
+
+.footer-bg {
+    background-color: var(--dark);
 }
 
 .footer-logo p {

@@ -427,8 +427,8 @@ label {
 }
 
 .footer-image {
-    width: 260px;
     height: auto;
+    max-width: 260px !important;
 }
 
 .footer-heading h6 {
@@ -451,4 +451,21 @@ label {
         text-align: center;
         align-items: center;
     }
+
+
 }
+
+@media screen and (max-width: 576px) {
+    .section-2 > .container .form-floating {
+        width: 100%;
+    }
+
+    .section-2 > .container button {
+        width: 50%;
+    }
+
+    footer .left-container {
+        flex-direction: row-reverse !important;
+    }
+}
+

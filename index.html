@@ -95,11 +95,11 @@
 
     <div class="container-fluid section-2">
         <h5 class="d-flex justify-content-center pt-5">WHICH TOUR WOULD YOU LIKE TO GO ON?</h5>
-        <div class="container d-flex justify-content-around form-container">
+        <div class="container d-flex flex-wrap justify-content-around form-container py-4">
 
-            <div class="form-floating col-3 mx-1 my-5">
+            <div class="form-floating col-lg-3 col-md-12 col-sm-12 col-xs-12 px-1 my-2">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Select</option>
+                    <option selected>United States</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -107,23 +107,23 @@
                 <label for="floatingSelect">Destination</label>
             </div>
 
-            <div class="form-floating col-3 mx-1 my-5">
+            <div class="form-floating col-lg-3 col-md-12 col-sm-12 col-xs-12 px-1 my-2">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>insert Date Picker here</option>
+                    <option selected id="todays-date">April 1 - April 20, 2023</option>
                 </select>
-                <label for="floatingSelect">Duration</label>
+                <label for="floatingSelect" id="duration">Duration</label>
             </div>
 
-            <div class="form-floating col-3 mx-1 my-5">
+            <div class="form-floating col-lg-3 col-md-12 col-sm-12 col-xs-12 px-1 my-2">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Select</option>
+                    <option selected>7 days</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
                 <label for="floatingSelect">Touring Style</label>
             </div>
-            <button class="btn-brand col-3 mx-1 my-5" type="submit">Search</button>
+            <button class="btn-brand col-lg-3 col-md-8 col-sm-8 col-xs-8 px-1 my-2" type="submit">Search</button>
         </div>
     </div>
 
@@ -131,7 +131,7 @@
 
     <div class="container-fluid section-3">
         <div class="three-touring-images container d-flex flex-wrap m-auto p-4">
-            <div class="tour-sec-container col-md-12 col-lg-4 m-2 p-4">
+            <div class="tour-sec-container col-md-12 col-xl-4 p-4">
                 <div class="touring-img">
                     <img class="img-fluid" src="./img/touring-style-1.jpg" alt="adventure">
                 </div>
@@ -140,7 +140,7 @@
                 <button class="btn-learn d-flex justify-content-center mx-auto"><span>Learn More</span></button>
             </div>
 
-            <div class="tour-sec-container col-md-12 col-lg-4 m-2 p-4">
+            <div class="tour-sec-container col-md-12 col-xl-4 p-4">
                 <div class="touring-img">
                     <img class="img-fluid" src="./img/touring-style-2.jpg" alt="adventure">
                 </div>
@@ -149,7 +149,7 @@
                 <button class="btn-learn d-flex justify-content-center mx-auto"><span>Learn More</span></button>
             </div>
 
-            <div class="tour-sec-container col-md-12 col-lg-4 m-2 p-4">
+            <div class="tour-sec-container col-md-12 col-xl-4 p-4">
                 <div class="touring-img">
                     <img class="img-fluid" src="./img/touring-style-3.jpg" alt="adventure">
                 </div>
@@ -970,16 +970,16 @@
     </div>
 <div class="container-fluid col-12 footer-bg">
     <footer class="container footer d-flex p-3">
-        <div class="left-container d-flex flex-column justify-content-between">
+        <div class="left-container float-left d-flex flex-column justify-content-between">
             <p>“Allow your inner-spirit guide you towards a life of wonder!”</p>
             
             <div class="footer-logo">
-                <img src="./img/lite-freevelo-logo.png" width="260" alt="">
+                <img class="m-auto" src="./img/lite-freevelo-logo.png" width="260" alt="">
                 <p>&copy; 2022 - 2023 Freevelo</p>
             </div> 
         </div>
 
-        <div class="footer-heading d-flex flex-column flex-wrap mx-auto">
+        <div class="footer-heading d-flex flex-column mx-auto">
             <h6 class="pb-2">Company</h6>
             <a href="#">Careers</a>
             <a href="#">Meet our staff</a>
@@ -988,7 +988,7 @@
             <a href="#">Careers</a>
         </div>
 
-        <div class="footer-heading d-flex flex-column flex-wrap mx-auto">
+        <div class="footer-heading d-flex flex-column mx-auto">
             <h6 class="pb-2">Contact</h6>
             <a href="#">Careers</a>
             <a href="#">Meet our staff</a>
@@ -999,7 +999,7 @@
 
         </div>
 
-        <div class="footer-heading d-flex flex-column flex-wrap mx-auto">
+        <div class="footer-heading d-flex flex-column mx-auto">
             <h6 class="pb-2">Resources</h6>
             <a href="#">Careers</a>
             <a href="#">Meet our staff</a>
@@ -1008,7 +1008,7 @@
             <a href="#">Careers</a>
         </div>
 
-        <div class="footer-heading d-flex flex-column flex-wrap mx-auto">
+        <div class="footer-heading d-flex flex-column mx-auto">
             <h6 class="pb-2">Legal</h6>
             <a href="#">Careers</a>
             <a href="#">Meet our staff</a>

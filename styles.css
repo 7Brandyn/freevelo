@@ -413,9 +413,10 @@ label {
     color: var(--lite);
 }
 
-.footer p {
+.footer > div > p {
     width: 260px;
     margin-bottom: 0;
+    font-style: italic;
 }
 
 .footer-bg {
@@ -423,12 +424,11 @@ label {
 }
 
 .footer-logo p {
-    font-size: .7rem;
+    font-size: .5rem;
 }
 
-.footer-image {
-    height: auto;
-    max-width: 260px !important;
+.right-container {
+    max-width: 60%;
 }
 
 .footer-heading h6 {
@@ -452,7 +452,140 @@ label {
         align-items: center;
     }
 
+    /* TOURING CARD */
 
+
+    /* END OF TOURING CARD */
+
+    .first-time {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-container {
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .left-container {
+        padding-top: 20px;
+    }
+
+    footer > div > p {
+        width: 100% !important;
+        padding: 8px;
+    }
+
+    .footer-logo p {
+        padding: 8px;
+    }
+  
+    .group-tours {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .single-tour {
+        margin: 4px;
+        color: var(--lite);
+        background-color: var(--brand);
+        height: 100%;
+        width: auto;
+        max-width: 240px;
+        padding: 10px;
+        background-color: var(--brand);
+        border-radius: 5px;
+        transition: .4s;
+    }
+
+    .single-tour:nth-child(n+7) {
+        display: none;
+    }
+
+    .single-c1 h3 {
+        text-align: center;
+        position: static;
+        font-weight: 900;
+    }
+
+    .single-c1 > img {
+        width: 100%;
+        object-fit: cover;
+        height: 140px;
+    }
+
+    .second-row {
+        margin: 4px;
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    .lorem {
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .second-row p:nth-child(2) {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .length {
+        width: 40px;
+        height: auto;
+    }
+
+    .days-long {
+        text-align: center;
+        align-items: center;
+        padding: 4px;
+    }
+
+    .difficulty {
+        line-height: 16px;
+    }
+
+    .difficulty p {
+        margin-bottom: 0;
+    }
+
+    .third-row {
+        display: flex !important;
+        flex-direction: row;
+        align-items: flex-end;
+        bottom: 0;
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    .pill-group {
+        align-items: flex-start;
+    }
+
+    .badge-pill {
+        font-size: .45rem !important;
+    }
+
+    .view-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100% !important;
+        margin: 8px;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -462,10 +595,6 @@ label {
 
     .section-2 > .container button {
         width: 50%;
-    }
-
-    footer .left-container {
-        flex-direction: row-reverse !important;
     }
 }
 

@@ -496,9 +496,9 @@ label {
         margin: 4px;
         color: var(--lite);
         background-color: var(--brand);
-        height: 100%;
-        width: auto;
-        max-width: 240px;
+        height: auto;
+        width: 100%;
+        max-width: 340px;
         padding: 10px;
         background-color: var(--brand);
         border-radius: 5px;

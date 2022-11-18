@@ -243,7 +243,6 @@ label {
     transform: scale(1.1);
     transition: -webkit-transform 400ms ease;
     transition: transform 400ms ease;
-    transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .touring-img img:hover {
